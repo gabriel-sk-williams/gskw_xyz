@@ -1,9 +1,10 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import { useState } from 'react'
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function Navbar() {
     return (
       <nav className="navbar">
+        <h1>gskw</h1>
         {/*
         <div className="navbar-content">
           <a href="/" className="navbar-brand">My Blog</a>
