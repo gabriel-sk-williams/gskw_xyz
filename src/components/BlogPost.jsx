@@ -1,25 +1,25 @@
-// BlogPost.jsx
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { posts } from '../essays/metadata';
+import ReactMarkdown from 'react-markdown';
 
 function BlogPost() {
-  const { id } = useParams(); // Gets the ID from the URL
-  
-  // If you're keeping posts in a data file:
-  const posts = [
-    { 
-      id: "1",  // IDs should match what you'll use in URLs
-      title: "My First Post",
-      content: "This is my first blog post..."
-    },
-    { 
-      id: "2",
-      title: "My Second Post",
-      content: "This is another blog post..."
-    }
-  ];
+  const { id } = useParams(); // Get ID from URL
+  const [content, setContent] = useState('');
 
-  // Find the matching post
+  // Find matching post
   const post = posts.find(post => post.id === id);
+
+  // Fetch markdown content
+  useEffect(() => {
+    if (post) { 
+      import(post.path).then(res => {
+        fetch(res.default)
+        .then(response => response.text())
+        .then(text => setContent(text));
+      })  
+    }
+  }, [post]);
 
   if (!post) {
     return <div>Post not found</div>;
@@ -28,7 +28,7 @@ function BlogPost() {
   return (
     <article>
       <h1>{post.title}</h1>
-      <div>{post.content}</div>
+      <ReactMarkdown>{content}</ReactMarkdown>
     </article>
   );
 }

@@ -31,7 +31,7 @@
     border:0;
     padding:0;
     list-style:none;
-    color: var(--color-pink);
+    color: var(--color-black);
     -webkit-font-smoothing: antialiased!important;
   }
   
@@ -55,6 +55,4 @@
   .click {
     cursor:pointer;
   }
-  h2.click:hover {
-    font-weight:500;
-  }
+  
