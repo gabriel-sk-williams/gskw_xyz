@@ -4,7 +4,9 @@
 function Navbar() {
     return (
       <nav className="navbar">
-        <h1>gskw</h1>
+        <a href="/">
+          <h1>gskw</h1>
+        </a>
         {/*
         <div className="navbar-content">
           <a href="/" className="navbar-brand">My Blog</a>

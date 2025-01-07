@@ -19,14 +19,14 @@
     font-style: normal;
 }
 
-/* Logo and Research Entry Titles */
+/* Logo & Article Titles */
 h1 {
   display: inline-block;
   font-family:'Plantin', serif;
   font-weight:300;
   letter-spacing:0.12rem;
   font-size: 4rem;
-  line-height: normal;
+  /*line-height: normal;*/
   color:var(--color-black);
   cursor:pointer;
   margin: auto 0;
@@ -39,33 +39,19 @@ h1 {
                                   supported by Chrome and Opera */
 }
 
-/* Selection */
+/* Links */
 h2 {
   font-family:'Plantin', serif;
   font-weight:300;
   letter-spacing:0.06rem;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  color:var(--color-black);
+  color:var(--color-darkgrey);
   cursor:pointer;
   margin: auto 0;
 }
 
-h2:not(.italic):hover{
-  font-weight: 600;
-}
-h2.italic:hover{
-  font-weight: 500;
-}
-h2.bold{
-  font-weight: 600;
-}
-h2.click:hover {
-  font-weight:500;
-}
-
-
-/* Body Text */
+/* Subtitle */
 h3 {
   font-family:'EB Garamond', serif;
   font-weight: 400;
@@ -83,21 +69,13 @@ h3 {
                                   supported by Chrome and Opera */
 }
 
-h3.link:hover {
-  color:var(--color-powder);
-}
+
 
 h4 {
-  font-family:Montserrat;
-  font-weight:300;
+  font-family:'Plantin', serif;
+  font-weight:600;
   font-size: 1.2rem;
-  /* line-height: 4.2rem;.2 */
   color:var(--color-darkgrey);
-  cursor:default;
-}
-
-h4.click:hover {
-  font-weight:400;
 }
 
 h5 {
@@ -124,28 +102,7 @@ h6 {
   color:var(--color-darkgrey);
 }
 
-h2.bold{
-  font-weight: 600;
-}
-
-h3.bold{
-  font-weight: 600;
-}
-
-h6:hover{
-  color:var(--color-powder);
-}
-
-h6.bold{
-  font-weight: 600;
-}
-
-/*
-p,a {
-  text-decoration: none;
-}
-*/
-
+/* Links */
 a {
   color:var(--color-darkgrey);
   font-weight: 600;
@@ -171,11 +128,17 @@ q {
 
 p {
   font-family:'Plantin', serif;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  /*padding-top: 1rem;*/
-  color:var(--color-black);
-  cursor:pointer;
+  font-size: 1.3rem;
+  line-height: 1.65rem;
+  color:var(--color-darkgrey);
+
+  /* newspaper justification*/
+  text-align: justify;
+  /*
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  */
 }
 
 sup, sub {
@@ -184,6 +147,24 @@ sup, sub {
   top: -0.4em;
   font-size: smaller;
 }
+
+/*
+h2.bold{
+  font-weight: 600;
+}
+
+h3.bold{
+  font-weight: 600;
+}
+
+h6:hover{
+  color:var(--color-powder);
+}
+
+h6.bold{
+  font-weight: 600;
+}
+*/
 
 /*
 p.tab{
@@ -197,4 +178,30 @@ p.tab{
   line-height: 2.4rem;
   margin-left:60px;
 }
-  */
+
+/*
+h2:not(.italic):hover{
+  font-weight: 600;
+}
+h2.italic:hover{
+  font-weight: 500;
+}
+h2.bold{
+  font-weight: 600;
+}
+h2.click:hover {
+  font-weight:500;
+}
+*/
+
+/*
+h3.link:hover {
+  color:var(--color-powder);
+}
+*/
+
+/*
+h4.click:hover {
+  font-weight:400;
+}
+*/

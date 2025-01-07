@@ -52,7 +52,9 @@
               user-select: auto; /* Non-prefixed version, currently
                                     supported by Chrome and Opera */
   }
+  
   .click {
     cursor:pointer;
   }
+  
   

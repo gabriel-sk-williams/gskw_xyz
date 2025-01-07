@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { posts } from '../essays/metadata';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 function BlogPost() {
   const { id } = useParams(); // Get ID from URL
@@ -12,13 +13,11 @@ function BlogPost() {
 
   // Fetch markdown content
   useEffect(() => {
-    if (post) { 
-      import(post.path).then(res => {
-        fetch(res.default)
-        .then(response => response.text())
-        .then(text => setContent(text));
-      })  
-    }
+    import(/* @vite-ignore */post.path).then(res => {
+      fetch(res.default)
+      .then(response => response.text())
+      .then(text => setContent(text));
+    })  
   }, [post]);
 
   if (!post) {
@@ -27,8 +26,21 @@ function BlogPost() {
 
   return (
     <article>
+      <div className="header-gap"></div>
       <h1>{post.title}</h1>
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <h3>{post.subtitle}</h3>
+      <h3>{post.date}</h3>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        /*
+        remarkPlugins={[remarkSuperscript]}
+        components={{
+          superscript: ({children}) => <sup>{children}</sup>,
+        }}
+        */
+      >
+        {content}
+      </ReactMarkdown>
     </article>
   );
 }
