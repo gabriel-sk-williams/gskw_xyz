@@ -1,6 +1,9 @@
 
 ![boxers](/images/004_card.jpg)
 
+> *Oh ye seekers after perpetual motion, how many vain chimeras have you pursued? Go and take your place with the alchemists.*
+    —Leonardo da Vinci, 1494
+
 What is sustainability, really? Here we have a term, so central to contemporary progressive philosophy that it serves as a catch-all for energy, ecology, urbanism, cars, environmental policy—you name it. We don't actually hear the term out loud very often. It doesn't always need to said out loud if only because its subsidiary terms ? Sustainability is no math problem; it is a product of language(!)—one which is due some analysis to bring its true meaning to light. [^1]
 
 Two major treatments on meaning and language come to mind: one of them Immanuel Kant’s Critique of Pure Reason (1781), and the other lies somewhere in the depths of mid-twentieth century Post-Structuralism. There is a tension between the two systems that we’ll discuss here, but they are also two sides of the same coin—and both are indispensable to having any real discussion about sustainability on local or world stages.
@@ -38,7 +41,6 @@ We find a number of problems with this definition, not least that it reduces sus
 While 'agreeing on a definition' is half the battle, the other half really is figuring out what to do about it. Sustainability is now popularly conceived as a problem of government policy, meaning that climate change is now __everyone's__ problem—but not one we can tackle without forcing everyone to comply. I, however, largely disagree; there is so much more potential for innovation. Stay tuned.
 
 
-[^1]: (1) We find a number of problems with this definition, not least that it reduces sustainability to a human-centric resource allocation problem. Also: “future generations”? How many? Are we talking about the next fifty generations or the next fifty years? Time is left open-ended, and every following measure of sustainability breaks down. Should we be striving to create sustainable Earthly systems until the Sun explodes? If so, what are the real barriers and goals associated with humanity meeting its own basic needs until solar collapse?
-While 'agreeing on a definition' is half the battle, the other half really is figuring out what to do about it. Sustainability is now popularly conceived as a problem of government policy, meaning that climate change is now __everyone's__ problem—but not one we can tackle without forcing everyone to comply. I, however, largely disagree; there is so much more potential for innovation. Stay tuned.
+[^1]: (1) We find a number of problems with this definition, not least that it reduces sustainability to a human-centric resource allocation problem.
 
-[^2]: Additional footnote
+[^2]: (2) Additional footnote

@@ -45,6 +45,44 @@ ol li {
   padding: 0 10px;
 }
 
+blockquote {
+  margin: center;
+  width: 480px;
+}
+
+
+
+footer {
+  min-height: 50px;
+  text-align: center;
+}
+
+/* footnotes */
+.footnotes {
+  position: relative;
+  height: 32rem;
+  margin: 2rem auto;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+/* Style the back reference arrow */
+.data-footnote-backref {
+  margin-left: 0.5rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+
+/*
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+*/
+
 /*
 position:absolute;
 padding-left: 20%;
