@@ -2,12 +2,6 @@
 // MAIN LAYOUT//
 */
 
-section {
-  position:relative;
-  width:100%;
-  height:100%;
-}
-
 .navbar {
   margin-top:8rem;
 }
@@ -31,7 +25,7 @@ section {
 }
 
 img {
-  width:100%;
+  width: 100%;
 }
 
 ol {
@@ -46,11 +40,11 @@ ol li {
 }
 
 blockquote {
-  margin: center;
-  width: 480px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
-
-
 
 footer {
   min-height: 50px;
@@ -59,8 +53,7 @@ footer {
 
 /* footnotes */
 .footnotes {
-  position: relative;
-  height: 32rem;
+  display: inline-block;
   margin: 2rem auto;
   padding-top: 1rem;
   border-top: 1px solid #ddd;
@@ -69,7 +62,7 @@ footer {
 /* Style the back reference arrow */
 .data-footnote-backref {
   margin-left: 0.5rem;
-  color: #0066cc;
+  color: var(--color-darkgrey);
   text-decoration: none;
 }
 

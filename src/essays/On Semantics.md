@@ -1,8 +1,9 @@
 
 ![boxers](/images/004_card.jpg)
 
-> *Oh ye seekers after perpetual motion, how many vain chimeras have you pursued? Go and take your place with the alchemists.*
-    —Leonardo da Vinci, 1494
+> *Oh ye seekers after perpetual motion, how many vain chimeras have you pursued? Go and take your place with the alchemists.* 
+
+> —Leonardo da Vinci, 1494
 
 What is sustainability, really? Here we have a term, so central to contemporary progressive philosophy that it serves as a catch-all for energy, ecology, urbanism, cars, environmental policy—you name it. We don't actually hear the term out loud very often. It doesn't always need to said out loud if only because its subsidiary terms ? Sustainability is no math problem; it is a product of language(!)—one which is due some analysis to bring its true meaning to light. [^1]
 
