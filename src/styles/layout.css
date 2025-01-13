@@ -171,8 +171,12 @@ padding-right: 20%;
 // POSITIONAL DUDES
 */
 
-.gap {
-  margin-top:9px;
+.break {
+  height:4rem;
+}
+
+.double-break {
+  height:8rem;
 }
   
 .header-gap {
@@ -186,8 +190,7 @@ padding-right: 20%;
 }
 
 .triple-break {
-  height: 180px;
-  padding-top:180px;
+  height: 12rem;
 }
 
 .grid-break {

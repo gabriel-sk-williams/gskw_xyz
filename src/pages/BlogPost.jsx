@@ -28,16 +28,10 @@ function BlogPost() {
     <article>
       <div className="header-gap"></div>
       <h1>{post.title}</h1>
-      <h3>{post.subtitle}</h3>
-      <h3>{post.date}</h3>
+      {/*<h3>{post.subtitle}</h3>*/}
+      {/*<h3>{post.date}</h3>*/}
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
-        /*
-        remarkPlugins={[remarkSuperscript]}
-        components={{
-          superscript: ({children}) => <sup>{children}</sup>,
-        }}
-        */
       >
         {content}
       </ReactMarkdown>

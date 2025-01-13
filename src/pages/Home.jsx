@@ -7,9 +7,8 @@ function Home() {
 
   return (
     <article>
-      <h2>this is more of a header</h2>
-      <h3>favor</h3>
-      <h4>dark souls</h4>
+      <h2 className="darkgrey">notes and identifying treatises</h2>
+      
       <BlogList/>
     </article>
   );

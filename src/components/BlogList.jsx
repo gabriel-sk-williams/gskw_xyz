@@ -8,6 +8,7 @@ function BlogList() {
 
     return (
         <div>
+            <div className="double-break"/>
             {posts?.map(post => (
             <div key={post.id}>
                 <Entry key={post.id} {...post} />

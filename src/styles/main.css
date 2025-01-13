@@ -14,6 +14,7 @@
   }
   
   .black { color:var(--color-black); }
+  .darkgrey { color:var(--color-darkgrey) }
   .halftone { color:var(--color-halftone) }
   .grey { color:var(--color-grey) }
   .italic { font-style: italic; }

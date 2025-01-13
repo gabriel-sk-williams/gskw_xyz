@@ -1,25 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,300i,400,400i,500,500i,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:300,300i,400,400i,500,500i,600,700,800&display=swap');
-
-
-@font-face {
-    font-family: 'Harriet Display';
-    src: url('../assets/fonts/HarrietDisplay-Bold.woff2') format('woff2'),
-         url('../assets/fonts/HarrietDisplay-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-  }
-  
 @font-face {
     font-family: 'Plantin';
     src: url('../assets/fonts/Plantin.woff2') format('woff2'),
          url('../assets/fonts/PLantin.woff') format('woff');
-    font-weight: normal;
+    font-weight: 100 200 300 400 500 600 700 800 900;
     font-style: normal;
 }
 
-/* Logo & Article Titles */
+@font-face {
+  font-family: 'Plantin Bold';
+  src: url('../assets/fonts/PlantinStd-Bold.woff2') format('woff2'),
+       url('../assets/fonts/PlantinStd-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plantin Italic';
+  src: url('../assets/fonts/PlantinStd-Italic.woff2') format('woff2'),
+       url('../assets/fonts/PlantinStd-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Alright Sans */
+@font-face {
+  font-family: 'Alright Sans';
+  src: url('../assets/fonts/AlrightSans.woff2') format('woff2'),
+         url('../assets/fonts/AlrightSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Headline */
 h1 {
   display: inline-block;
   font-family:'Plantin', serif;
@@ -28,63 +42,48 @@ h1 {
   font-size: 4rem;
   /*line-height: normal;*/
   color:var(--color-black);
-  cursor:pointer;
   margin: auto 0;
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
 }
 
-/* Links */
+/* Entry Title */
 h2 {
   font-family:'Plantin', serif;
   font-weight:300;
   letter-spacing:0.06rem;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  color:var(--color-darkgrey);
-  cursor:pointer;
+  color:var(--color-black);
   margin: auto 0;
+}
+
+/* Chapter Heading */
+h3 {
+  font-family:'Plantin Bold';
+  font-weight: 700;
+  letter-spacing:0.012rem;
+  font-size: 1.25rem;
+  color:var(--color-black);
+  margin: auto 0;
+  margin-top: 3rem;
 }
 
 /* Subtitle */
-h3 {
-  font-family:'EB Garamond', serif;
-  font-weight: 400;
-  letter-spacing:0.012rem;
-  font-size: 1.4rem;
-  line-height: 2.2rem;
-  color:var(--color-darkgrey);
-  margin: auto 0;
-  -webkit-touch-callout: text; /* iOS Safari */
-    -webkit-user-select: text; /* Safari */
-     -khtml-user-select: text; /* Konqueror HTML */
-       -moz-user-select: text; /* Firefox */
-        -ms-user-select: text; /* Internet Explorer/Edge */
-            user-select: text; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
-}
-
 h4 {
-  font-family:'Plantin', serif;
-  font-weight:600;
-  font-size: 1.2rem;
+  font-family:'Alright Sans';
+  font-weight:300;
+  font-size: 1rem;
   color:var(--color-darkgrey);
 }
 
+/*
 h5 {
-  font-family:Montserrat;
+  font-family:'Alright Sans', serif;
   font-weight:300;
-  letter-spacing:0.025rem;
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 1.5rem;
-  color:var(--color-black);
-  cursor:default;
+  color:var(--color-grey);
 }
+*/
 
 h6 {
   display: inline-block;
@@ -96,20 +95,14 @@ h6 {
   color:var(--color-darkgrey);
 }
 
-/* Links */
-a {
-  color:var(--color-darkgrey);
-  font-weight: 600;
-  cursor: pointer;
-}
 
-a:hover {
-  color:var(--color-powder);
-}
+/* Body */
 
-q {
-  font-family:'EB Garamond', serif;
-  font-size: 1.38rem;
+blockquote p {
+  font-family:'Plantin Italic', serif;
+  font-weight:300;
+  font-size: 1.35rem;
+  line-height: 1.75rem;
   font-style: italic;
   color:var(--color-darkgrey);
 }
@@ -117,9 +110,19 @@ q {
 p {
   font-family:'Plantin', serif;
   font-size: 1.3rem;
-  line-height: 1.65rem;
-  color:var(--color-darkgrey);
+  line-height: 2rem; /*1.65*/
+  color:var(--color-black);
   text-align: justify; /* newspaper justification*/
+}
+
+strong {
+  font-family:'Plantin Bold';
+}
+
+li > p {
+  color:var(--color-darkgrey);
+  font-size: 1.2rem;
+  line-height: 1.4rem;
 }
 
 /*
@@ -205,5 +208,24 @@ h4.click:hover {
 /*
 h5.link{
   cursor:pointer;
+}
+*/
+
+/*
+a {
+  color:var(--color-darkgrey);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a:hover {
+  color:var(--color-powder);
+}
+
+q {
+  font-family:'EB Garamond', serif;
+  font-size: 1.38rem;
+  font-style: italic;
+  color:var(--color-grey);
 }
 */

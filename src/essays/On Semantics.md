@@ -1,15 +1,19 @@
 
 ![boxers](/images/004_card.jpg)
 
+---
+
 > *Oh ye seekers after perpetual motion, how many vain chimeras have you pursued? Go and take your place with the alchemists.* 
 
 > —Leonardo da Vinci, 1494
+
+---
 
 What is sustainability, really? Here we have a term, so central to contemporary progressive philosophy that it serves as a catch-all for energy, ecology, urbanism, cars, environmental policy—you name it. We don't actually hear the term out loud very often. It doesn't always need to said out loud if only because its subsidiary terms ? Sustainability is no math problem; it is a product of language(!)—one which is due some analysis to bring its true meaning to light. [^1]
 
 Two major treatments on meaning and language come to mind: one of them Immanuel Kant’s Critique of Pure Reason (1781), and the other lies somewhere in the depths of mid-twentieth century Post-Structuralism. There is a tension between the two systems that we’ll discuss here, but they are also two sides of the same coin—and both are indispensable to having any real discussion about sustainability on local or world stages.
 
-#### part one: noumena
+### part one: noumena
 Immanuel Kant coined the term __noumenon__ to describe the concepts that represent and categorize the ideas we derived from the world. For instance: according to Kant, we can’t possibly describe every dog on Earth with a single word, but we try anyway. We use the word 'dog' when we’re talking about some subset of the Canine family, and most people get the picture, because dogs are pretty common. But! If a dog walked into your house and you were interacting with it, Kant would say—that dog—in particular, was a __phenomenon__, an actual instance, of the noumenon __dog.__
 
 So phenomena are the actual instances of things, and noumena are the high-level concepts describing them. They're very often the same word, as it was in the case just described—we just rely on additional language to instantiate a phenomenon from the noumenon from which it is derived. If someone asked you: “Hey uh, who came over to your house today?”, and you replied: “Dog!” you’d sound nutty—mostly because English sounds ridiculous without articles—but also because you tried to use a general, high-level concept (a noumenon) to describe a real-life phenomenon. If the other person wasn’t there to experience the exact same phenomenon you did, we have to use details and all sorts of explanatory language to elaborate. [^2]
@@ -24,11 +28,11 @@ Much of the time, people are using the most controversial noumena differently as
 
 With regard to sustainability: it’s a personal least-favorite word of mine, not least for its awkward affixes and general inelegance; that said, it is a useful concept, even if our internal versions of 'sustainability' tend to merge with the popular, simplified conception of it. Furthermore, society at large seems unwilling to acknowledge what a deceptively complex idea it is, and as such the term loses value.
 
-#### part two: post-structuralism
+### part two: post-structuralism
 Almost two hundreds years after Kant, in the early 1900’s, philosophers started looking more closely at language and meaning in the context of Structuralism, which discards the idea of universal platonic concepts, and says that we really only understand the meaning of words as they relate to other words. No concept is original—it merely inhabits pre-existing structures. We can’t understand the concept of 'democracy' without building onto the structure of the word 'government,' which in turn is built onto so much extant scaffolding: collective decision-making, taxation, bureaucracy, etc.
 
 Some decades later, the French Post-Structuralists of the 1960’s came along and __deconstructed Structuralism.__ A good explanation comes from Corey Mohler:
-__Post-structuralism is an internal, structuralist critique of structuralism itself. [Derrida] claims that even the structure of the words is not adequate to understand the meaning of a word, since the meaning of a word always depends on its context, both current and historical, and that context is never stable. Therefore it is impossible for words to have fixed meanings or be understood completely.__
+*Post-structuralism is an internal, structuralist critique of structuralism itself. [Derrida] claims that even the structure of the words is not adequate to understand the meaning of a word, since the meaning of a word always depends on its context, both current and historical, and that context is never stable. Therefore it is impossible for words to have fixed meanings or be understood completely.*
 
 Post-structuralism, therefore, injects new layers into our collective conception of 'sustainability.' The older proxies we once used to signal our concern for the earth—rainforest destruction, the 'hole in the ozone,'' acid rain, global warming—have generally been discarded in favor of 'climate change.' In a post-structuralist world, we encounter the collision of context, connotation, power, hierarchy, and even enunciation when we try to agree on new ideas and their place in society.
 
