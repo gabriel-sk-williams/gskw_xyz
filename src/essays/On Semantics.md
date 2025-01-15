@@ -1,6 +1,4 @@
 
-![boxers](/images/004_card.jpg)
-
 ---
 
 > *Oh ye seekers after perpetual motion, how many vain chimeras have you pursued? Go and take your place with the alchemists.* 

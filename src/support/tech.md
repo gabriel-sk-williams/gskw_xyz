@@ -1,0 +1,1 @@
+Despite what you've been told in school, the metric system is not always perfect. Alternative units and systems can sometimes provide superior utility in the appropriate context. If you recoil at the mere mention of imperial or even vernacular measurement systems, this essay is for you—the dogmatic acolytes of metric.

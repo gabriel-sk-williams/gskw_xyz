@@ -1,64 +1,78 @@
 .blog-list {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
   
-  .blog-card {
-    display: flex;
-    background: white;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    box-shadow: 0 -1px 0  #d7d7d7;
-    /*border-radius: 8px;*/
-    /*box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
-    /*transition: transform 0.2s ease, box-shadow 0.2s ease;*/
-  }
+.blog-card {
+  display: flex;
+  background: white;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 -1px 0  #d7d7d7;
+  /*border-radius: 8px;*/
+  /*box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
+  /*transition: transform 0.2s ease, box-shadow 0.2s ease;*/
+}
 
-  hr {
-    /*
-    color: #d7d7d7;
-    border-color: #d7d7d7;
-    background-color: #d7d7d7;
-    */
-    border-top: 0px solid #d7d7d7;
-  }
+hr {
+  /*
+  color: #d7d7d7;
+  border-color: #d7d7d7;
+  background-color: #d7d7d7;
+  */
+  border-top: 0px solid #d7d7d7;
+}
   
-  .blog-card:hover {
-    
-    transform: translateY(-2px);
-    /* box-shadow: 0 4px 8px rgba(0,0,0,0.15); */
-    
-  }
+.blog-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
   
-  .blog-card-image {
-    padding: 1rem;
-    width: 180px;
-    height: 180px;
-    flex-shrink: 0;
-  }
+.blog-card-image {
+  padding: 1rem;
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+}
   
-  .blog-card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.blog-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+}
   
-  .blog-card-content {
-    padding: 1rem;
-    flex-grow: 1;
-  }
+.featured-card-content {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.featured-card-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.bottom-element {
+  margin-top: auto;
+  position: absolute;
+  bottom: 1.5rem;
+}
   
-  .blog-card-title {
-    margin: 0 0 0.5rem 0;
-  }
+.blog-card-title {
+  margin: 0 0 0.5rem 0;
+}
   
-  .blog-card-subtitle {
-    color: #666;
-    margin: 0 0 0.2rem 0;
-  }
+.blog-card-subtitle {
+  color: #666;
+  margin: 0 0 0.2rem 0;
+}
   

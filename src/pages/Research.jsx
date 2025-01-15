@@ -1,9 +1,8 @@
-import BlogList from '../components/BlogList';
 import '../styles/main.css'
 import '../styles/type.css'
+import BlogList from '../components/BlogList';
 
-
-function Home() { 
+function Research() { 
   return (
     <article>
       <BlogList/>
@@ -11,4 +10,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Research;

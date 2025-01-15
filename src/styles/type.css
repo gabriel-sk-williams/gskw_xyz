@@ -73,6 +73,7 @@ h4 {
   font-weight:300;
   font-size: 1rem;
   color:var(--color-darkgrey);
+  text-decoration: none;
 }
 
 /*
@@ -211,17 +212,34 @@ h5.link{
 }
 */
 
-/*
+
 a {
   color:var(--color-darkgrey);
   font-weight: 600;
   cursor: pointer;
+  text-decoration: none;
 }
 
-a:hover {
+a > h2 {
+  color:var(--color-darkgrey);
+}
+
+a > h2.active {
+  color:var(--color-black);
+}
+
+
+
+
+a > h1:hover {
   color:var(--color-powder);
 }
 
+a > h2:hover {
+  color:var(--color-powder);
+}
+
+/*
 q {
   font-family:'EB Garamond', serif;
   font-size: 1.38rem;
