@@ -6,7 +6,8 @@ export const posts = [
         date: "Winter 2025",
         image: "/images/aleph.jpg",
         path: "../essays/On Semantics.md", 
-        wordCount: "1,474 words"
+        wordCount: "1,299",
+        readTime: "6 min"
     },
     { 
         id: "on-units-i",
@@ -15,7 +16,8 @@ export const posts = [
         date: "Spring 2025",
         image: "/images/mesures.jpg",
         path: "../essays/On Units I.md",
-        wordCount: "1,300",
+        wordCount: "1,476",
+        readTime: "7 min"
     },
     { 
         id: "on-units-ii",
@@ -24,6 +26,7 @@ export const posts = [
         date: "Summer 2025",
         image: "/images/boxers.jpg",
         path: "../essays/On Units II.md",
-        wordCount: "1,200",
+        wordCount: "1,404",
+        readTime: "7 min"
     }
   ];

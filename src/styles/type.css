@@ -1,4 +1,13 @@
 @font-face {
+  font-family: 'Plantin Light';
+  src: url('PlantinStd-Light.woff2') format('woff2'),
+      url('PlantinStd-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
     font-family: 'Plantin';
     src: url('../assets/fonts/Plantin.woff2') format('woff2'),
          url('../assets/fonts/PLantin.woff') format('woff');
@@ -76,29 +85,26 @@ h4 {
   text-decoration: none;
 }
 
-/*
+/* Stats */
 h5 {
-  font-family:'Alright Sans', serif;
-  font-weight:300;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color:var(--color-grey);
+  font-family:'Plantin Bold';
+  font-size: 1.1rem;
+  color:var(--color-black);
+  text-decoration: none;
 }
-*/
 
+/* Footer */
 h6 {
   display: inline-block;
-  font-family:Abel;
-  font-weight:400;
+  font-family:'Plantin Thin', serif;
   letter-spacing:.15rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1rem;
-  color:var(--color-darkgrey);
+  color:var(--color-halftone);
 }
 
 
 /* Body */
-
 blockquote p {
   font-family:'Plantin Italic', serif;
   font-weight:300;
@@ -111,9 +117,9 @@ blockquote p {
 p {
   font-family:'Plantin', serif;
   font-size: 1.3rem;
-  line-height: 2rem; /*1.65*/
-  color:var(--color-black);
+  line-height: 2rem; /*previously 1.65*/
   text-align: justify; /* newspaper justification*/
+  color:var(--color-black);
 }
 
 strong {
@@ -121,10 +127,46 @@ strong {
 }
 
 li > p {
-  color:var(--color-darkgrey);
   font-size: 1.2rem;
   line-height: 1.4rem;
+  color:var(--color-darkgrey);
 }
+
+a {
+  color:var(--color-darkgrey);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a > h2 {
+  color:var(--color-darkgrey);
+}
+
+a > h2.active {
+  color:var(--color-black);
+}
+
+a > h1:hover {
+  color:var(--color-powder);
+}
+
+a > h2:hover {
+  color:var(--color-powder);
+}
+
+a > h6:hover {
+  color:var(--color-powder);
+}
+
+/*
+q {
+  font-family:'EB Garamond', serif;
+  font-size: 1.38rem;
+  font-style: italic;
+  color:var(--color-grey);
+}
+*/
 
 /*
 sup, sub {
@@ -209,41 +251,5 @@ h4.click:hover {
 /*
 h5.link{
   cursor:pointer;
-}
-*/
-
-
-a {
-  color:var(--color-darkgrey);
-  font-weight: 600;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-a > h2 {
-  color:var(--color-darkgrey);
-}
-
-a > h2.active {
-  color:var(--color-black);
-}
-
-
-
-
-a > h1:hover {
-  color:var(--color-powder);
-}
-
-a > h2:hover {
-  color:var(--color-powder);
-}
-
-/*
-q {
-  font-family:'EB Garamond', serif;
-  font-size: 1.38rem;
-  font-style: italic;
-  color:var(--color-grey);
 }
 */

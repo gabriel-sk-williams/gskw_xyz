@@ -28,7 +28,7 @@ function BlogPost() {
     <article>
       <div className="header-gap"></div>
       <h1>{post.title}</h1>
-      <p><img src={post.image} alt="boxers"/></p>
+      <img src={post.image} alt="boxers"/>
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
       >

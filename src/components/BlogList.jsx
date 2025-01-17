@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Entry from './Entry';
 import '../styles/main.css';
 import '../styles/type.css';
+import '../styles/flex.css';
 
 function BlogList() {
 
@@ -15,17 +16,19 @@ function BlogList() {
 
             <Link to={`/${featuredPost.id}`} className="featured-card">
                 <div className="featured-card-content">
-                    <h1 className="">{featuredPost.title}</h1>
-                    <img 
-                        src={featuredPost.image} 
-                        alt={featuredPost.title}
-                        className=""
-                    />
-                    <div className="gap"/>
-                    <div>
-                        <h4 className="blog-card-subtitle">{featuredPost.subtitle}</h4>
-                        <h4 className="blog-card-subtitle">{featuredPost.date}</h4>
-                        <h4 className="blog-card-subtitle">{featuredPost.wordCount}</h4>
+                    <div className="full-height flex-column">
+                        <h1 className="">{featuredPost.title}</h1>
+                        <img src={featuredPost.image} alt={featuredPost.title}/>
+                        <div className="gap"/>
+                        <div className="title-bar">
+                            <h4 className="blog-card-subtitle">{featuredPost.subtitle}</h4>
+                            <h4 className="blog-card-subtitle">{featuredPost.date}</h4>
+                        </div>
+
+                        <div className="stats-bar">
+                            <h4 className="blog-card-stats">{featuredPost.wordCount} words</h4>
+                            <h4 className="blog-card-stats">{featuredPost.readTime} read</h4>
+                        </div>
                     </div>
                 </div>
             </Link>

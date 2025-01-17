@@ -1,9 +1,9 @@
 
 ---
 
-> *Oh ye seekers after perpetual motion, how many vain chimeras have you pursued? Go and take your place with the alchemists.* 
+> *And here begins my despair as a writer. All language is a set of symbols whose use among its speakers assumes a shared past. How, then, can I translate into words the limitless Aleph, which my floundering mind can scarcely encompass?* 
 
-> —Leonardo da Vinci, 1494
+> —Jorge Luis Borges, The Aleph (1945)
 
 ---
 
