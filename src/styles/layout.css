@@ -85,42 +85,6 @@ footer {
   margin-top:3rem;
 }
 
-/*
-.break {
-  height:4rem;
-}
-
-.double-break {
-  height:8rem;
-}
-
-.bottom-break {
-  height: 300px;
-  width: 100%;
-  bottom: 0;
-}
-
-.triple-break {
-  height: 12rem;
-}
-
-.grid-break {
-  opacity:1;
-  margin-top:60px;
-}
-
-.half-break {
-  margin-top:30px;
-}
-
-.divider {
-  margin-top:16px;
-  margin-bottom:16px;
-  height:1px;
-  background:var(--color-powder);
-}
-*/
-
 .top{
   vertical-align:top!important;
 }

@@ -107,10 +107,8 @@ h6 {
 /* Body */
 blockquote p {
   font-family:'Plantin Italic', serif;
-  font-weight:300;
   font-size: 1.35rem;
   line-height: 1.75rem;
-  font-style: italic;
   color:var(--color-darkgrey);
 }
 
@@ -120,6 +118,10 @@ p {
   line-height: 2rem; /*previously 1.65*/
   text-align: justify; /* newspaper justification*/
   color:var(--color-black);
+}
+
+em {
+  font-style: normal /*previously 1.65*/
 }
 
 strong {
