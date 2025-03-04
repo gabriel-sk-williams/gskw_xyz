@@ -8,19 +8,41 @@ function BlogPost() {
   const { id } = useParams(); // Get ID from URL
   const [content, setContent] = useState('');
 
+  const importMarkdown = async () => {
+    try {
+      // Use dynamic import with relative path
+      const module = await import(`${post.path}`);
+      
+      // Fetch the markdown content
+      const response = await fetch(module.default);
+      
+      if (!response.ok) {
+        throw new Error('Failed to fetch markdown content');
+      }
+      
+      const text = await response.text();
+      setContent(text);
+    } catch (err) {
+      console.error('Error importing markdown:', err);
+      setError(err.message);
+    }
+  };
+
   // Find matching post
   const post = posts.find(post => post.id === id);
-  console.log("post:", post)
 
   // Fetch markdown content
   useEffect(() => {
-    import(/* @vite-ignore */post.path).then(res => {
-      fetch(res.default)
-      .then(response => response.text())
-      .then(text => setContent(text));
-    })
-
-
+    if (post) {
+      //import(/* @vite-ignore */post.path).then(res => {
+        /*
+        fetch(res.default)
+        .then(response => response.text())
+        .then(text => setContent(text));
+      })
+        */
+       importMarkdown();
+    }
   }, [post]);
 
   if (!post) {
