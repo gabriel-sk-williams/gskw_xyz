@@ -7,6 +7,7 @@ import remarkGfm from 'remark-gfm';
 function BlogPost() {
   const { id } = useParams(); // Get ID from URL
   const [content, setContent] = useState('');
+  const [error, setError] = useState(null);
 
   const importMarkdown = async () => {
     try {
@@ -47,6 +48,10 @@ function BlogPost() {
 
   if (!post) {
     return <div>Post not found</div>;
+  }
+
+  if (error) {
+    return <div>Error loading post: {error}</div>;
   }
 
   return (
