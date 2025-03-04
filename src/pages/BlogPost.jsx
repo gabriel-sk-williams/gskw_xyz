@@ -10,6 +10,7 @@ function BlogPost() {
 
   // Find matching post
   const post = posts.find(post => post.id === id);
+  console.log("post:", post)
 
   // Fetch markdown content
   useEffect(() => {
@@ -17,7 +18,9 @@ function BlogPost() {
       fetch(res.default)
       .then(response => response.text())
       .then(text => setContent(text));
-    })  
+    })
+
+
   }, [post]);
 
   if (!post) {
