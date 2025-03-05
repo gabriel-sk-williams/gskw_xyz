@@ -21,9 +21,7 @@ function About() {
         <article>
             <div className="header-gap"></div>
             <h1>who is gskw?</h1>
-            <ReactMarkdown
-                remarkPlugins={[remarkGfm]}
-            >
+            <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {content}
             </ReactMarkdown>
         </article>

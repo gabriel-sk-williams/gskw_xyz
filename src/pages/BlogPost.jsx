@@ -9,6 +9,62 @@ function BlogPost() {
   const [content, setContent] = useState('');
   const [error, setError] = useState(null);
 
+  // const modules = await import.meta.glob('../essays/*.md');
+
+  // Find matching post
+  const post = posts.find(post => post.id === id);
+
+  async function fetchMarkdown(path) {
+    try {
+        const response = await fetch(path);
+        if (!response.ok) throw new Error("Failed to load markdown file");
+        return await response.text();
+    } catch (error) {
+        console.error("Error loading markdown:", error);
+        return "Error loading content.";
+    }
+}
+
+  // Fetch markdown content
+  useEffect(() => {
+
+    //if (post) {
+    //  import(/* @vite-ignore */post.path).then(res => {
+    //  fetch(post.path)
+    //    .then(response => response.text())
+    //    .then(text => setContent(text))
+    //    .catch(error => setError(error));
+    //  }
+    //}
+  if (post) {
+    fetchMarkdown(post.path).then(text => setContent(text));
+
+  }
+  }, [post]);
+
+  if (!post) {
+    return <div>Post not found</div>;
+  }
+
+  if (error) {
+    return <div>Error loading post: {error}</div>;
+  }
+
+  return (
+    <article>
+      <div className="header-gap"></div>
+      <h1>{post.title}</h1>
+      <img src={post.image} alt="boxers"/>
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        {content}
+      </ReactMarkdown>
+    </article>
+  );
+}
+
+export default BlogPost;
+
+  /*
   const importMarkdown = async () => {
     try {
       // Use dynamic import with relative path
@@ -28,44 +84,4 @@ function BlogPost() {
       setError(err.message);
     }
   };
-
-  // Find matching post
-  const post = posts.find(post => post.id === id);
-
-  // Fetch markdown content
-  useEffect(() => {
-    if (post) {
-      //import(/* @vite-ignore */post.path).then(res => {
-        /*
-        fetch(res.default)
-        .then(response => response.text())
-        .then(text => setContent(text));
-      })
-        */
-       importMarkdown();
-    }
-  }, [post]);
-
-  if (!post) {
-    return <div>Post not found</div>;
-  }
-
-  if (error) {
-    return <div>Error loading post: {error}</div>;
-  }
-
-  return (
-    <article>
-      <div className="header-gap"></div>
-      <h1>{post.title}</h1>
-      <img src={post.image} alt="boxers"/>
-      <ReactMarkdown
-        remarkPlugins={[remarkGfm]}
-      >
-        {content}
-      </ReactMarkdown>
-    </article>
-  );
-}
-
-export default BlogPost;
+  */
