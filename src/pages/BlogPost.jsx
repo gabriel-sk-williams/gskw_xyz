@@ -38,7 +38,6 @@ function BlogPost() {
     //}
   if (post) {
     fetchMarkdown(post.path).then(text => setContent(text));
-
   }
   }, [post]);
 
