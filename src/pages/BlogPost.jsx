@@ -9,12 +9,13 @@ function BlogPost() {
   const [content, setContent] = useState('');
   const [error, setError] = useState(null);
 
-  // const modules = await import.meta.glob('../essays/*.md');
+  const uri = "https://raw.githubusercontent.com/gabriel-sk-williams/xyz/main/";
 
   // Find matching post
   const post = posts.find(post => post.id === id);
 
-  async function fetchMarkdown(path) {
+  async function fetchMarkdown(title) {
+    const path = `${uri}${title}.md`
     try {
         const response = await fetch(path);
         if (!response.ok) throw new Error("Failed to load markdown file");
@@ -23,7 +24,7 @@ function BlogPost() {
         console.error("Error loading markdown:", error);
         return "Error loading content.";
     }
-}
+  }
 
   // Fetch markdown content
   useEffect(() => {
@@ -37,7 +38,7 @@ function BlogPost() {
     //  }
     //}
   if (post) {
-    fetchMarkdown(post.path).then(text => setContent(text));
+    fetchMarkdown(post.title).then(text => setContent(text));
   }
   }, [post]);
 
