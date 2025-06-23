@@ -2,7 +2,7 @@ function Footer() {
     return (
       <footer>
         <a href="/">
-          <h6>gskw 2025</h6>
+          <h4>gskw 2025</h4>
         </a>
       </footer>
     );

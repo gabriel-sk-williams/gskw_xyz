@@ -4,7 +4,9 @@ import '../styles/type.css'
 import '../styles/entry.css'
 import '../styles/flex.css'
 
-/* eslint-disable react/prop-types */
+// /* eslint-disable react/prop-types */
+
+
 function Entry({ id, title, subtitle, date, image, wordCount, readTime})  {
 
     return (
@@ -25,7 +27,7 @@ function Entry({ id, title, subtitle, date, image, wordCount, readTime})  {
             </div>
             
             <div className="blog-card-image">
-                <img src={image} alt={title} />
+                <img src={`/images/${image}`} alt={title} />
             </div>
         </Link>
     );

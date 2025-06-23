@@ -4,25 +4,25 @@ export const posts = [
         title: "On Semantics",
         subtitle: "A small treatise on the meanings of words",
         date: "Winter 2025",
-        image: "/images/aleph.jpg",
+        image: "aleph.jpg",
         wordCount: "1,299",
         readTime: "6 min"
     },
     { 
         id: "on-units-i",
         title: "On Units I",
-        subtitle: "Numerous black sphinxes",
+        subtitle: "A moistly-rendered argument? Upon the driest topick possible?",
         date: "Spring 2025",
-        image: "/images/mesures.jpg",
+        image: "mesures.jpg",
         wordCount: "1,476",
         readTime: "7 min"
     },
     { 
         id: "on-units-ii",
         title: "On Units II",
-        subtitle: "a small treatise",
+        subtitle: "The most comprehensive follow-up analysis ever written on the subject",
         date: "Summer 2025",
-        image: "/images/boxers.jpg",
+        image: "boxers.jpg",
         wordCount: "1,404",
         readTime: "7 min"
     }

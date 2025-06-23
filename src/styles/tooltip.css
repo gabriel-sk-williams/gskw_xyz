@@ -1,0 +1,41 @@
+/* Style the footnote reference */
+sup a[data-footnote-ref="true"] {
+  position: relative;
+  text-decoration: none;
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+/* Tooltip container */
+sup a[data-footnote-ref="true"]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  color: var(--color-darkgrey);
+  padding: 8px 12px;
+  
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4;
+  max-width: 250px;
+  width: max-content;
+  text-align: left;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  pointer-events: none;
+  border-radius: 10px;
+  border: 1px solid #cbcbcb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Show tooltip on hover */
+sup a[data-footnote-ref="true"]:hover::after,
+sup a[data-footnote-ref="true"]:hover::before {
+  opacity: 1;
+  visibility: visible;
+}

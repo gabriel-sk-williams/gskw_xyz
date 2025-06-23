@@ -1,5 +1,5 @@
 // import { useState, useEffect } from 'react'
-import { posts } from '../essays/metadata';
+import { posts } from '../support/metadata';
 import { Link } from 'react-router-dom'
 import Entry from './Entry';
 import '../styles/main.css';
@@ -18,7 +18,7 @@ function BlogList() {
                 <div className="featured-card-content">
                     <div className="full-height flex-column">
                         <h1 className="">{featuredPost.title}</h1>
-                        <img src={featuredPost.image} alt={featuredPost.title}/>
+                        <img src={`/images/${featuredPost.image}`} alt={featuredPost.title}/>
                         <div className="gap"/>
                         <div className="title-bar">
                             <h4 className="blog-card-subtitle">{featuredPost.subtitle}</h4>
